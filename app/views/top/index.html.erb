@@ -1,6 +1,16 @@
+<div class="topPage">
+  <div class="listWrapper">
+    <% @tasks.each do |task| %>
+      <div class="list">
+        <div class="list_header">
+          <h2 class="list_header_title"><%= task.title %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 <p>realize</p>
 <p>growing</p>
 <p>road map</p>
 <p>何かを成し遂げるため、成長・向上のため、自分や他人を満たすため、管理するためのアプリケーション</p>
-
-<%= link_to "bootstrap", "#", class: "btn btn-primary" %>
